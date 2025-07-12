@@ -1,8 +1,9 @@
 body {
 	background-color: rgb(206, 206, 206);
 }
-#p1{
+#p1 {
 	color: brown;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 100px;
+	font-style: italic;
 }
