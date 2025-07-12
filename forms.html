@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Form Example</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicons/favicon-32.png" />
+	</head>
+	<body>
+		<form action="index.php" method="post">
+			<!-- Text Inputs -->
+			<div>
+				<span style="background-color: rgb(151, 194, 174)">
+					<label for="username"><b>Username:</b></label>
+				</span>
+				<input
+					type="text"
+					id="username"
+					name="username"
+					required
+					minlength="6"
+					maxlength="20"
+					placeholder="username123" />
+			</div>
+
+			<div>
+				<label for="password">Password:</label>
+				<input
+					type="password"
+					id="password"
+					name="password"
+					required
+					minlength="8"
+					maxlength="20"
+					placeholder="password123@@" />
+			</div>
+
+			<div>
+				<label for="email">Email:</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					required
+					placeholder="mail@mail.com" />
+			</div>
+
+			<div>
+				<label for="phone">Phone:</label>
+				<input
+					type="tel"
+					id="phone"
+					name="phone"
+					placeholder="073-333-333"
+					pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" />
+			</div>
+
+			<!-- Other Input Types -->
+			<div>
+				<label for="birthday">Birthday:</label>
+				<input type="date" id="birthday" name="birthday" />
+			</div>
+
+			<div>
+				<label for="number">Number:</label>
+				<input type="number" id="number" name="number" max="10" min="0" />
+			</div>
+
+			<!-- Radio Buttons -->
+			<div>
+				<span>Options:</span>
+				<input type="radio" id="S1" value="S1" name="S" />
+				<label for="S1">S1</label>
+
+				<input type="radio" id="S2" value="S2" name="S" />
+				<label for="S2">S2</label>
+
+				<input type="radio" id="S3" value="S3" name="S" />
+				<label for="S3">S3</label>
+			</div>
+
+			<!-- Dropdown Menus -->
+			<div>
+				<label for="menu1">Main Menu:</label>
+				<select id="menu1" name="menu1">
+					<option value="">-- Select an option --</option>
+					<option value="home">Home</option>
+					<option value="about">About Us</option>
+					<option value="services">Services</option>
+					<option value="contact">Contact</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="menu2">Secondary Menu:</label>
+				<select id="menu2" name="menu2">
+					<option value="">-- Select --</option>
+					<option value="option1">Option 1</option>
+				</select>
+			</div>
+
+			<!-- Checkbox and Textarea -->
+			<div>
+				<input type="checkbox" id="test" name="test" />
+				<label for="test">Test Option</label>
+			</div>
+
+			<div>
+				<label for="comments">Comments:</label><br />
+				<textarea id="comments" name="comments" rows="3" cols="33">
+Enter text here</textarea
+				>
+			</div>
+
+			<!-- Form Buttons -->
+			<div>
+				<input type="submit" />
+				<input type="reset" />
+			</div>
+			<input type="file" accept="image/png" />
+		</form>
+	</body>
+</html>
