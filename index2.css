@@ -1,3 +1,7 @@
+@font-face {
+	font-family: "BreeSerif-Regular";
+	src: url("font/BreeSerif-Regular.ttf");
+}
 body {
 	background-color: rgb(206, 206, 206);
 }
@@ -8,5 +12,5 @@ body {
 	font-style: italic;
 }
 #p2 {
-	font-family: "Farro";
+	font-family: "BreeSerif-Regular";
 }
