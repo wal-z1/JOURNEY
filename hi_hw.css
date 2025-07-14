@@ -1,0 +1,20 @@
+#test {
+	background-color: rgb(210, 215, 224);
+	display: table;
+
+}
+.BOXES {
+	border-radius: 3px;
+	border-width: 2px;
+	border-color: rgb(36, 30, 30);
+	border-style: solid;
+	width: 48%;
+	float: left;
+	padding: 20px;
+	height: auto;
+	box-sizing: border-box;
+	margin: 10px;
+}
+.heads {
+	text-align: center;
+}
