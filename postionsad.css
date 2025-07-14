@@ -22,3 +22,10 @@
 	top: 25px;
 	left: 25px;
 }
+body {
+	background-image: url(Images/oceanpic.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
