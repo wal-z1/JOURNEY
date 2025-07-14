@@ -1,0 +1,15 @@
+body {
+	background-color: rgb(212, 235, 255);
+}
+#about {
+	border-style: solid;
+	border-width: 3px;
+	border-color: aqua;
+	border-radius: 2px;
+}
+#skills {
+	border-bottom: 3px solid rgb(56, 14, 14);
+}
+#contact {
+	text-shadow: 3px 3px 5px rgb(80, 32, 32), -3px -3px 5px blue;
+}
