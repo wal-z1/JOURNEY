@@ -1,0 +1,61 @@
+/* General paragraph styling */
+p {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 1.1em;
+}
+
+/* Heading 1 styling */
+h1 {
+	background-color: bisque;
+}
+
+/* Container for navigation buttons */
+#buttons {
+	text-align: center; /* Centers all buttons horizontally */
+}
+
+/* Base styling for all button links */
+#buttons a {
+	text-decoration: none; /* Removes underline from links */
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: bold;
+}
+#buttons a:not(#current) {
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.459);
+}
+
+/* Styling for the current page button */
+#buttons #current {
+	font-style: normal;
+	color: #1f3f33;
+	background-color: #54a587;
+	font-size: larger;
+	padding: 10px;
+	border: 2px solid;
+	border-radius: 3px;
+	border-color: #1c3d31;
+}
+
+/* Styling for regular navigation buttons */
+.moving {
+	font-style: normal;
+	color: #e8fdf5;
+	background-color: #04aa6d;
+	font-size: larger;
+	padding: 10px;
+	border: 2px solid;
+	border-radius: 3px;
+	border-color: #023d27;
+	display: inline-block;
+}
+
+/* Hover effect for navigation buttons */
+.moving:hover {
+	color: #e8fdf5;
+	background-color: #09d188;
+	padding: 10px;
+	border: 2px solid;
+	border-radius: 3px;
+	border-color: #023d27;
+	transform: translateY(-6px);
+}
