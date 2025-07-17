@@ -1,156 +1,33 @@
-/* Base Styles */
 body {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	font-family: Helvetica;
+	background-color: hsl(216, 18%, 16%);
 	margin: 0;
-	padding: 0;
-	min-height: 100vh;
+}
+#central {
+	height: 100vh; /* Full viewport height */
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	color: #333;
-	line-height: 1.6;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
 }
-
-/* Heading Style */
-#myh {
-	font-size: 3rem;
-	margin-bottom: 2rem;
-	color: #2c3e50;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-	position: relative;
-	padding-bottom: 0.5rem;
-}
-
-#myh::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 80px;
-	height: 4px;
-	background: linear-gradient(90deg, #3498db, #9b59b6);
-	border-radius: 2px;
-}
-
-/* Form Elements Container */
-body > *:not(script) {
-	width: 90%;
-	max-width: 500px;
-	margin: 0.5rem auto;
-}
-
-/* Label Style */
-label {
-	display: block;
-	margin-bottom: 0.5rem;
-	font-weight: 600;
-	color: #2c3e50;
-	transition: all 0.3s ease;
-}
-
-/* Input Field Style */
-#userform {
-	width: 100%;
-	padding: 1rem;
-	border: 2px solid #e0e0e0;
-	border-radius: 8px;
-	font-size: 1rem;
-	margin-bottom: 1.5rem;
-	transition: all 0.3s ease;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-#userform:focus {
-	border-color: #3498db;
-	box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
-	outline: none;
-}
-
-/* Button Style */
-#submitform {
-	background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);
-	color: white;
-	border: none;
-	padding: 1rem 2rem;
-	font-size: 1rem;
-	font-weight: 600;
-	border-radius: 8px;
-	cursor: pointer;
-	width: 100%;
-	transition: all 0.3s ease;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
-#submitform:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-	background: linear-gradient(135deg, #2980b9 0%, #8e44ad 100%);
-}
-
-#submitform:active {
-	transform: translateY(0);
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Username Display Style */
-#user {
-	margin-top: 2rem;
-	padding: 1rem;
-	background-color: white;
-	border-radius: 8px;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-	font-size: 1.1rem;
+#contain {
 	text-align: center;
-	opacity: 0;
-	transform: translateY(20px);
-	transition: all 0.4s ease;
+	border-radius: 5px;
+	border: solid 2px rgb(1, 2, 19);
+	padding: 20px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.342);
+	background-color: #948979;
 }
-
-#user.show {
-	opacity: 1;
-	transform: translateY(0);
+#title {
+	filter: drop-shadow(3px 3px 10px black);
+	color: #f1eee7;
+	padding: 8px;
+	background-color: #393e46;
+  border-radius: 3px;
 }
-
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-	#myh {
-		font-size: 2rem;
-	}
-
-	body > *:not(script) {
-		width: 85%;
-	}
-}
-
-/* Animation for page load */
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-body > *:not(script) {
-	animation: fadeIn 0.6s ease forwards;
-}
-
-#userform {
-	animation-delay: 0.2s;
-}
-
-#submitform {
-	animation-delay: 0.4s;
-}
-
-#user {
-	animation-delay: 0.6s;
+#inputs {
+	display: flex;
+	justify-content: center; /* Center children horizontally */
+	align-items: center; /* Align items vertically */
+	gap: 12px; /* Space between children */
+  	flex-wrap: wrap;        /* Wrap on smaller screens */
 }
