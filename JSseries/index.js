@@ -1,11 +1,11 @@
-//console.log("kill yrs");
+// learning input
+let username;
+console.log(username);
+let howmanytimes = 0;
 
-//window.alert("ye jsut say so  ");
-let x = 125;
-let y = true;
-let z = "hiiii";
-
-document.getElementById("myh").textContent = x;
-document.getElementById("p1").textContent = y;
-
-document.getElementById("p2").textContent = z;
+document.getElementById("submitform").onclick = function () {
+	username = document.getElementById("userform").value;
+	document.getElementById("user").textContent = ` UPDATED ${username}`;
+	howmanytimes++;
+	document.getElementById("times").textContent = `${howmanytimes}`;
+};
