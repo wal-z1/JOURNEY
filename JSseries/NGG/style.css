@@ -1,0 +1,52 @@
+/* Reset default browser margin */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+/* Centering container */
+#centercontain {
+	border: 3px solid #333;
+	border-radius: 8px;
+	padding: 30px;
+	width: 400px;
+	margin: 60px auto; /* centers the box horizontally */
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* center child elements horizontally */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/* Headings and labels */
+#centercontain h1 {
+	margin-bottom: 10px;
+	font-size: 1.8rem;
+	color: #222;
+}
+
+#centercontain p {
+	margin-bottom: 20px;
+	color: #555;
+}
+
+.selectt {
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	align-self: flex-start; /* align labels to left */
+}
+
+/* Input styling */
+.select {
+	width: 100%;
+	padding: 10px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+
+}
