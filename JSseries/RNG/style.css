@@ -1,0 +1,42 @@
+body {
+	font-family: Helvetica;
+	background-color: hsl(216, 18%, 16%);
+	margin: 0;
+}
+#central {
+	height: 100vh; /* Full viewport height */
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+}
+#contain {
+	text-align: center;
+	border-radius: 5px;
+	border: solid 2px rgb(1, 2, 19);
+	padding: 20px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.342);
+	background-color: #948979;
+}
+@keyframes hoverr {
+	to {
+		transform: translateY(-10px);
+	}
+}
+#contain:hover {
+	animation: hoverr 0.3s ease-in-out forwards;
+}
+
+#title {
+	filter: drop-shadow(3px 3px 10px black);
+	color: #f1eee7;
+	padding: 8px;
+	background-color: #393e46;
+	border-radius: 3px;
+}
+#inputs {
+	display: flex;
+	justify-content: center; /* Center children horizontally */
+	align-items: center; /* Align items vertically */
+	gap: 12px; /* Space between children */
+	flex-wrap: wrap; /* Wrap on smaller screens */
+}
