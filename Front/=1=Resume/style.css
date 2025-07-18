@@ -1,0 +1,30 @@
+body {
+	font-family: Inter;
+	background-color: rgb(236, 227, 219);
+	margin-left: 40vh;
+	margin-right: 40vh;
+	flex-wrap: wrap;
+	display: flex;
+}
+#per {
+	padding: 0;
+	width: calc(300 * 0.75px);
+	height: calc(320 * 0.75px);
+	display: inline-block;
+	filter: drop-shadow(11px 6px rgb(184, 211, 134));
+	border-radius: 10px;
+	border: solid hsl(81, 47%, 30%);
+}
+#tname {
+	font-family: "Roboto Slab";
+}
+#ma {
+
+  width:130vh;
+	display: flex;
+	justify-content: center; /* Distributes space between items */
+	gap: 200px; /* Adds space between all flex items */
+}
+.Name{
+  text-align: center;
+}
