@@ -1,5 +1,5 @@
 body {
-	font-family: Inter;
+	font-family: Inter, sans-serif;
 	background-color: rgb(236, 227, 219);
 	margin-left: 40vh;
 	margin-right: 40vh;
@@ -19,12 +19,11 @@ body {
 	font-family: "Roboto Slab";
 }
 #ma {
-
-  width:130vh;
+	width: 130vh;
 	display: flex;
 	justify-content: center; /* Distributes space between items */
 	gap: 200px; /* Adds space between all flex items */
 }
-.Name{
-  text-align: center;
+.Name {
+	text-align: center;
 }
