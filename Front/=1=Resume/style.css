@@ -1,29 +1,58 @@
 body {
 	font-family: Inter, sans-serif;
 	background-color: rgb(236, 227, 219);
-	margin-left: 40vh;
-	margin-right: 40vh;
-	flex-wrap: wrap;
-	display: flex;
+	/*cool changes that help center */
+	padding: 20px; /*padding to give space to elemnets*/
+	max-width: 900px; /*  On large screens, it prevents your resume from stretching too wide.*/
+	margin: 0 auto; /*0 top,bottom margin while selctign auto margin on left right */
 }
+
 #per {
 	padding: 0;
-	width: calc(300 * 0.75px);
-	height: calc(320 * 0.75px);
+	width: 225px;
+	height: 240px;
 	display: inline-block;
 	filter: drop-shadow(11px 6px rgb(184, 211, 134));
 	border-radius: 10px;
 	border: solid hsl(81, 47%, 30%);
 }
+
+#ma {
+	display: flex; /*  This turns #ma into a flex container which allows children alignment in a row*/
+	justify-content: flex-start; /*  Aligns children (image + text) to the left .*/
+	gap: 40px; /* Adds consistent spacing **between flex items** (instead of using margin)*/
+	margin: 10px 0;
+	padding: 10px 0;
+	flex-wrap: wrap;
+}
+
+.Name {
+	text-align: left; /* This aligns text to the left */
+}
+
+#age {
+	font-size: 1.8em;
+}
+
 #tname {
 	font-family: "Roboto Slab";
+	color: hsl(81, 47%, 20%);
+	font-size: 3em;
+	margin-bottom: 0.2em;
 }
-#ma {
-	width: 130vh;
-	display: flex;
-	justify-content: center; /* Distributes space between items */
-	gap: 200px; /* Adds space between all flex items */
+
+#N h1:not(#tname) {
+	font-weight: 500;
+	margin: 0.1em 0;
 }
-.Name {
-	text-align: center;
+
+#SC h5 {
+	display: inline-block;
+	transition: transform 0.3s ease-in-out;
+}
+
+#SC h5:hover {
+	display: inline-block;
+	text-shadow: 3px 3px 5px rgba(24, 71, 26, 0.452);
+	transform: translate(5px, 3px);
 }
