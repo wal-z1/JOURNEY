@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login-Page</title>
+		<title>Login Page</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,15 +18,29 @@
 		<div class="bg">
 			<img src="Images/bg2.png" alt="background image" id="bgg" />
 		</div>
-
 		<main>
-			<h1>Login Page :</h1>
+			<h1>Welcome Back</h1>
+
 			<div id="Menu">
-				<label for="Username">Username</label>
-				<input id="Username" placeholder="Username" />
-				<label for="Password">Password</label>
-				<input id="Password" type="password" placeholder="Password" />
+				<div class="input-group">
+					<label for="Username">Username</label>
+					<input
+						id="Username"
+						placeholder="Enter your username"
+						aria-label="Username" />
+				</div>
+				<div class="input-group">
+					<label for="Password">Password</label>
+					<input
+						id="Password"
+						type="password"
+						placeholder="Enter your password"
+						aria-label="Password" />
+				</div>
 				<button id="but">Log in</button>
+				<div class="forgot-password">
+					<a href="#">Forgot password?</a>
+				</div>
 			</div>
 		</main>
 	</body>
