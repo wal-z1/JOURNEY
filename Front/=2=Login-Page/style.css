@@ -1,10 +1,94 @@
 body {
 	margin: 0;
-	background-color: #f0f0f0; /* fallback for empty space */
-	background-image: url("Images/bg2.png");
-	background-size: contain; /* keep full image visible */
-	background-repeat: no-repeat;
-	background-position: center;
+}
+.bg {
+	position: fixed;
 	height: 100vh;
 	width: 100vw;
+	background: radial-gradient(circle, #afcae3 0%, #dbe1e4 50%, #e3d7cb 100%);
+}
+
+#bgg {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	/* Normal appearance: full brightness, no blur, high contrast */
+	filter: brightness(1) blur(0) contrast(100%)
+		drop-shadow(10px 10px 10px #0000003f);
+	transition: transform 0.3s ease-in-out, filter 0.8s ease-in-out,
+		border-radius 1s ease-in-out;
+}
+
+#bgg:hover {
+
+	transform: scale(1.03);
+
+	filter: brightness(0.8) blur(3px) contrast(90%)
+		drop-shadow(10px 10px 10px #0000003f);
+
+}
+main {
+	padding: 2rem;
+	border: solid 3px;
+	border-radius: 10px;
+	display: flex;
+	position: relative;
+	top: 50vh;
+	left: 50vw;
+	height: 330px;
+	width: 260px;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column; /* Stack items vertically */
+	transform: translate(-50%, -50%);
+	background-color: rgb(192, 192, 192);
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+	padding: 50px 35px;
+}
+main * {
+	margin: 15px 0px;
+}
+main h1 {
+	font-family: "Cal sans", sans-serif;
+}
+
+#but {
+	transition-duration: 0.4s;
+	background-color: #273138; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border: 2px solid #3a494e; /* Green */
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	font-weight: 200;
+	font-family: "Lexend", sans-serif;
+}
+
+#but:hover {
+	background-color: #121a1d;
+	color: white;
+}
+
+#Menu {
+	text-align: center;
+	font-weight: 200;
+	font-family: "Lexend", sans-serif;
+}
+
+#Menu input {
+	text-align: left;
+	font-weight: 200;
+	font-family: "Lexend", sans-serif;
+	background-color: #dbe1e4;
+	border-radius: 10px;
+	padding: 10px;
 }

@@ -5,18 +5,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Login-Page</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+			rel="stylesheet" />
 	</head>
 	<body>
-		<header>
-			<h1>Login Page :</h1>
-		</header>
+		<div class="bg">
+			<img src="Images/bg2.png" alt="background image" id="bgg" />
+		</div>
+
 		<main>
+			<h1>Login Page :</h1>
 			<div id="Menu">
-				<label id="usert" for="Username"></label>
-				<input id="Username" />
-				<label id="passt" for="Password"></label>
-				<input id="Password" type="password" />
-				<button>Submit</button>
+				<label for="Username">Username</label>
+				<input id="Username" placeholder="Username" />
+				<label for="Password">Password</label>
+				<input id="Password" type="password" placeholder="Password" />
+				<button id="but">Log in</button>
 			</div>
 		</main>
 	</body>
