@@ -9,10 +9,12 @@
 	<body>
 		<div id="content">
 			<h1>Dice Roller</h1>
-			<label for="num"># Of Dice</label>
-			<input type="number" min="1" id="num" value="1" />
+			<div class="select">
+				<label for="num"># Of Dice</label>
+				<input type="number" min="1" id="num" value="1" />
+			</div>
+			<br />
 			<button onclick="DiceFunc()">Roll Dice</button>
-
 			<div id="Diceres"></div>
 			<div id="Diceimg"></div>
 		</div>

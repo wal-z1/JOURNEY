@@ -4,5 +4,25 @@ body {
 	font-family: Helvetica, sans-serif;
 	display: flex;
 	justify-content: center;
-
+	align-items: center;
+	min-height: 100vh;
+}
+#content {
+	padding: 2rem;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+	border: solid 2px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+  min-height: 30%;
+}
+#content * {
+	margin-bottom: 10px;
+}
+.select {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 12px;
 }
