@@ -1,5 +1,41 @@
 /*remove the defaults*/
 body {
-	margin: 0%;
+	background: linear-gradient(
+		to bottom right,
+		hsl(208, 59%, 87%),
+		hsl(29, 81%, 89%)
+	);
+	height: 100vh;
+	margin: 0;
 	font-family: Helvetica, sans-serif;
+}
+* {
+	margin: 0%;
+	padding: 0%;
+}
+/*remove the defaults*/
+
+#container {
+	flex-flow: column wrap;
+	height: auto; /*take the possible Y length*/
+	width: 30%;
+	display: flex;
+	/*center that DIV*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*style that DIV*/
+	border-radius: 10px;
+	border: 2px solid rgb(36, 20, 78);
+	padding: 2%;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.384);
+	backdrop-filter: blur(30px) brightness(110%);
+	/*aligning elemnts*/
+  /*on work*/
+  
+}
+#container * {
+	/*gives that good space between lines */
+	margin-bottom: 10px;
 }
