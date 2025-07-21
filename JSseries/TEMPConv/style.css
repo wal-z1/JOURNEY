@@ -35,6 +35,7 @@ body {
 	justify-content: space-evenly;
 	/*what's left is dealt with in the elment its self*/
 	transition: all 0.3s ease-in-out;
+	word-wrap: break-word;
 }
 
 #container:hover {
