@@ -7,11 +7,14 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div>
+		<div id="content">
 			<h1>Dice Roller</h1>
 			<label for="num"># Of Dice</label>
-			<input type="number" min="1" id="num" />
-			<button>Roll</button>
+			<input type="number" min="1" id="num" value="1" />
+			<button onclick="DiceFunc()">Roll Dice</button>
+
+			<div id="Diceres"></div>
+			<div id="Diceimg"></div>
 		</div>
 		<script src="index.js"></script>
 	</body>
