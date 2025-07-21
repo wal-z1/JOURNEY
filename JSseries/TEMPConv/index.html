@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<script src="index.js"></script>
 		<!--Generic Tempalte no need for fancy stuff just js practice-->
 		<main>
 			<section>
@@ -22,15 +21,16 @@
 					<label for="FTOC"
 						>Fahrenheit &nbsp;&nbsp;&nbsp;➨ &nbsp;&nbsp;&nbsp;Celsius</label
 					>
-					<input type="radio" name="sel" id="FTOC	" />
+					<input type="radio" name="sel" id="FTOC" />
 					<hr />
-					<input type="number" id="in" />
-					<button>Go on</button>
+					<input type="number" id="in" placeholder="100" />
+					<button id="but">Go on</button>
 					<hr />
 					<p id="resultt">Result</p>
-					<output name="result"></output>
+					<output name="result" id="res"></output>
 				</div>
 			</section>
 		</main>
+		<script src="index.js"></script>
 	</body>
 </html>
