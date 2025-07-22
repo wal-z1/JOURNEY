@@ -1,0 +1,38 @@
+/*My /*presets*/
+*/ .rounded {
+	border-radius: 10px;
+}
+
+.shadow {
+	box-shadow: 0 0 10px #0003;
+}
+.margin55 {
+	margin: 5% 5%;
+}
+.padding10p {
+	padding: 2%;
+}
+.selected {
+	cursor: pointer;
+}
+
+/*presets*/
+body {
+	font-family: Helvetica, sans-serif;
+	margin: 0%;
+	flex-flow: column wrap;
+	width: 100vw;
+	display: flex;
+}
+#menu {
+	align-self: center;
+}
+#menu * {
+	margin-bottom: 5%;
+}
+#options {
+	display: flex;
+	flex-flow: column wrap;
+	word-wrap: break-word; /* older */
+	overflow-wrap: break-word; /* modern, same effect */
+}

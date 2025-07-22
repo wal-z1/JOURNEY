@@ -7,6 +7,26 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<div id="menu" class="shadow rounded padding10p margin55">
+			<h1>Random Password Generator</h1>
+			<label for="length"># Characters</label>
+			<input type="number" id="length" />
+			<div id="options">
+				<label for="caps" class="selected">
+					<input type="checkbox" id="caps" />
+					Capital letters ?
+				</label>
+				<label for="nums" class="selected">
+					<input type="checkbox" id="nums" />
+					Numbers ?
+				</label>
+				<label for="symbols" class="elected">
+					<input type="checkbox" id="symbols" />
+					Symbols ?
+				</label>
+			</div>
+			<output id="result"></output>
+		</div>
 		<script src="index.js"></script>
 	</body>
 </html>
