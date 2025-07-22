@@ -1,83 +1,80 @@
 function GEN() {
-	/*get ur things*/
+	/* Get the number of characters to generate */
+	let numtogen;
 	const chars = Number(document.getElementById("length").value);
-	console.log("chars:", chars);
-	/*check boxes*/
+
+	/* Get checkbox elements */
 	const caps = document.getElementById("caps");
-	console.log("caps:", caps);
+
 	const nums = document.getElementById("nums");
-	console.log("nums:", nums);
+
 	const symbols = document.getElementById("symbols");
-	console.log("symbols:", symbols);
-	choices_array = [1];
-	console.log("choices_array:", choices_array);
+
+	/* Set initial choices - always include lowercase (1) */
+	let choices_array = [1];
+
 	let pass = "";
-	console.log("pass:", pass);
+
+	/* Add user-selected options */
 	if (caps.checked) {
 		choices_array.push(2);
-		console.log("choices_array:", choices_array);
 	}
 	if (nums.checked) {
 		choices_array.push(3);
-		console.log("choices_array:", choices_array);
 	}
 	if (symbols.checked) {
 		choices_array.push(4);
-		console.log("choices_array:", choices_array);
 	}
-	let choice = choices_array[Math.floor(Math.random() * choices_array.length)];
-	console.log("choice:", choice);
-	/*removes choice from the array */
-	choices_array = choices_array.filter((n) => n !== choice);
-	console.log("choices_array:", choices_array);
 
-	/* while (chars > 0) { remove for now*/
+	/* Randomly pick one type to generate for now */
+	let choice = choices_array[Math.floor(Math.random() * choices_array.length)];
+
+	/* Remove the selected type to avoid repetition (for future logic) */
+	choices_array = choices_array.filter((n) => n !== choice);
+
+	/* Decide how many characters to generate */
 	if (chars >= 3) {
-		/*for picking type of chars to generate LESS the half the length*/
-		let numtogen = Math.floor(Math.random() * (chars / 2) + 1);
-		console.log("numtogen:", numtogen);
+		numtogen = Math.floor(Math.random() * (chars / 2) + 1);
+		console.log();
 	} else {
-		numtogen = chars; /*just fill the rest*/
-		console.log("numtogen:", numtogen);
+		numtogen = chars;
 	}
+
+	/* Generate characters based on the chosen type */
 	switch (choice) {
-		case 1: // lowercase letters: a–z (97–122)
+		case 1: // lowercase
 			for (let i = 0; i < numtogen; i++) {
 				let c = String.fromCharCode(
 					Math.floor(Math.random() * (122 - 97 + 1)) + 97
 				);
 				pass += c;
-				console.log("pass:", pass);
 			}
 			break;
 
-		case 2: // uppercase letters: A–Z (65–90)
+		case 2: // uppercase
 			for (let i = 0; i < numtogen; i++) {
 				let c = String.fromCharCode(
 					Math.floor(Math.random() * (90 - 65 + 1)) + 65
 				);
 				pass += c;
-				console.log("pass:", pass);
 			}
 			break;
 
-		case 3: // numbers: 0–9 (48–57)
+		case 3: // numbers
 			for (let i = 0; i < numtogen; i++) {
 				let c = String.fromCharCode(
 					Math.floor(Math.random() * (57 - 48 + 1)) + 48
 				);
 				pass += c;
-				console.log("pass:", pass);
 			}
 			break;
 
-		case 4: // symbols: ! to / (33–47) – can expand if needed
+		case 4: // symbols
 			for (let i = 0; i < numtogen; i++) {
 				let c = String.fromCharCode(
 					Math.floor(Math.random() * (47 - 33 + 1)) + 33
 				);
 				pass += c;
-				console.log("pass:", pass);
 			}
 			break;
 	}
