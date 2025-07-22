@@ -8,6 +8,7 @@ function GEN() {
 	const arraysy = `!@#$%^&*()_+-=[]{}|;:',.<>?/`;
 	let choices_array = [1];
 	let pass = "";
+	let direction;
 
 	if (caps.checked) {
 		choices_array.push(2);
@@ -29,10 +30,8 @@ function GEN() {
 
 		if (chars >= 3) {
 			numtogen = Math.floor(Math.random() * (chars / 2) + 1);
-			console.log("Chunk size:", numtogen);
 		} else {
 			numtogen = chars;
-			console.log("Leftover size:", numtogen);
 		}
 
 		switch (choice) {
@@ -42,8 +41,13 @@ function GEN() {
 					let c = String.fromCharCode(
 						Math.floor(Math.random() * (122 - 97 + 1)) + 97
 					);
-					pass += c;
-					console.log("-", c);
+					direction = Math.floor(Math.random() * 2);
+
+					if (direction === 1) {
+						pass += c; /*add to the right*/
+					} else {
+						pass = c + pass; /*add to the left*/
+					}
 				}
 				break;
 
@@ -53,8 +57,13 @@ function GEN() {
 					let c = String.fromCharCode(
 						Math.floor(Math.random() * (90 - 65 + 1)) + 65
 					);
-					pass += c;
-					console.log("-", c);
+					direction = Math.floor(Math.random() * 2);
+
+					if (direction === 1) {
+						pass += c; /*add to the right*/
+					} else {
+						pass = c + pass; /*add to the left*/
+					}
 				}
 				break;
 
@@ -64,8 +73,13 @@ function GEN() {
 					let c = String.fromCharCode(
 						Math.floor(Math.random() * (57 - 48 + 1)) + 48
 					);
-					pass += c;
-					console.log("-", c);
+					direction = Math.floor(Math.random() * 2);
+
+					if (direction === 1) {
+						pass += c; /*add to the right*/
+					} else {
+						pass = c + pass; /*add to the left*/
+					}
 				}
 				break;
 
@@ -73,8 +87,13 @@ function GEN() {
 				console.log("Adding symbols...");
 				for (let i = 0; i < numtogen; i++) {
 					let c = arraysy[Math.floor(Math.random() * arraysy.length)];
-					pass += c;
-					console.log("-", c);
+					direction = Math.floor(Math.random() * 2);
+
+					if (direction === 1) {
+						pass += c; /*add to the right*/
+					} else {
+						pass = c + pass; /*add to the left*/
+					}
 				}
 				break;
 		}
