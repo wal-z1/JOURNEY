@@ -1,8 +1,30 @@
 /*My /*presets*/
-*/ .rounded {
+* .rounded {
 	border-radius: 10px;
 }
 
+.buttons {
+	display: inline-block;
+	outline: 0;
+	appearance: none;
+	padding: 0px 12px;
+	border: 10px solid transparent;
+	border-radius: 4px;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: rgb(9, 128, 76);
+	box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px;
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	font-weight: 400;
+	height: 36px;
+	transition: all 150ms ease-in-out 0s;
+}
+.buttons:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgb(17, 97, 73);
+	box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
+}
 .shadow {
 	box-shadow: 0 0 10px #0003;
 }
