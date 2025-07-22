@@ -2,11 +2,10 @@ function GEN() {
 	let numtogen;
 	let chars = Number(document.getElementById("length").value);
 	console.log("Length:", chars);
-
 	const caps = document.getElementById("caps");
 	const nums = document.getElementById("nums");
 	const symbols = document.getElementById("symbols");
-
+	const arraysy = `!@#$%^&*()_+-=[]{}|;:',.<>?/`;
 	let choices_array = [1];
 	let pass = "";
 
@@ -73,9 +72,7 @@ function GEN() {
 			case 4:
 				console.log("Adding symbols...");
 				for (let i = 0; i < numtogen; i++) {
-					let c = String.fromCharCode(
-						Math.floor(Math.random() * (47 - 33 + 1)) + 33
-					);
+					let c = arraysy[Math.floor(Math.random() * arraysy.length)];
 					pass += c;
 					console.log("-", c);
 				}
@@ -85,4 +82,5 @@ function GEN() {
 		console.log("Current pass:", pass);
 		chars = chars - numtogen;
 	}
+	document.getElementById("result").textContent = pass;
 }

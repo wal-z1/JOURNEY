@@ -58,3 +58,9 @@ body {
 	word-wrap: break-word; /* older */
 	overflow-wrap: break-word; /* modern, same effect */
 }
+#result {
+	font-weight: bold;
+	font-size: 18px;
+	display: block;
+	text-align: center;
+}
