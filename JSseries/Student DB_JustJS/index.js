@@ -8,6 +8,15 @@ class Students {
 		this.courses = courses;
 		Students.sscount++; // use class name to access static
 	}
+	//with coef gpa
+	get gpa() {
+		let total = this.courses.reduce(
+			(acc, subject) => acc + subject.grade * subject.coef,
+			0
+		);
+		let NCoef = this.courses.reduce((acc, subject) => acc + subject.coef, 0);
+		return total / NCoef;
+	}
 }
 class Course {
 	constructor(name, level, grade, coef = 1) {
@@ -16,7 +25,6 @@ class Course {
 		this.grade = grade;
 		this.coef = coef;
 	}
-	
 }
 
 const student1 = new Students(
@@ -49,15 +57,6 @@ function gpac(student) {
 	let NfCourses = student.courses.length;
 	return total / NfCourses;
 }
-//with coef gpa
-function gpa(student) {
-	let total = student.courses.reduce(
-		(acc, subject) => acc + subject.grade * subject.coef,
-		0
-	);
-	let NCoef = student.courses.reduce((acc, subject) => acc + subject.coef, 0);
-	return total / NCoef;
-}
 
 function percoursegpa(course) {}
 console.log(student1);
@@ -65,4 +64,4 @@ console.log(student2);
 console.log(Students.sscount, "Number Of Students for now");
 console.log(gpac(student1));
 // testing the coef one
-console.log(gpa(student2));
+console.log(student2.gpa);
