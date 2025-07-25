@@ -9,5 +9,36 @@ class Students {
 	}
 }
 
-const walid = new Students("Walid", 19, "Math", "2CP");
-console.log(walid);
+const student1 = new Students(
+	"Alex",
+	19,
+	{
+		name: "Math",
+		level: "2CP",
+		grade: 19,
+	},
+	{
+		name: "English",
+		level: "2CP",
+		grade: 17,
+	}
+);
+
+const student2 = new Students(
+	"Walt",
+	19,
+	{
+		name: "Math",
+		level: "2CP",
+		grade: 13,
+	},
+	{
+		name: "English",
+		level: "2CP",
+		grade: 13,
+	}
+);
+
+console.log(student1);
+console.log(student2);
+console.log(Students.sscount);
