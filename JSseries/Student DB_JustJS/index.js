@@ -65,3 +65,8 @@ console.log(Students.sscount, "Number Of Students for now");
 console.log(gpac(student1));
 // testing the coef one
 console.log(student2.gpa);
+
+//function to add student as variable
+function addstudent(name, age, ...courses) {
+	return new Students(name, age, ...courses);
+}
