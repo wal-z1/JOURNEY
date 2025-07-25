@@ -16,6 +16,7 @@ class Course {
 		this.grade = grade;
 		this.coef = coef;
 	}
+	
 }
 
 const student1 = new Students(
@@ -58,6 +59,7 @@ function gpa(student) {
 	return total / NCoef;
 }
 
+function percoursegpa(course) {}
 console.log(student1);
 console.log(student2);
 console.log(Students.sscount, "Number Of Students for now");
