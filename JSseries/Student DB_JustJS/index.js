@@ -5,7 +5,7 @@ class Students {
 		this.name = name;
 		this.year = year;
 		this.courses = courses;
-		sscount++;
+		Students.sscount++; // use class name to access static
 	}
 }
 
