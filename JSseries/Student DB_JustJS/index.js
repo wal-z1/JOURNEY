@@ -50,9 +50,12 @@ function gpac(student) {
 }
 //with coef gpa
 function gpa(student) {
-	let total = student.courses.reduce((acc, subject) => acc + subject.grade, 0);
-	let NfCourses = student.courses.length;
-	return total / NfCourses;
+	let total = student.courses.reduce(
+		(acc, subject) => acc + subject.grade * subject.coef,
+		0
+	);
+	let NCoef = student.courses.reduce((acc, subject) => acc + subject.coef, 0);
+	return total / NCoef;
 }
 
 console.log(student1);
