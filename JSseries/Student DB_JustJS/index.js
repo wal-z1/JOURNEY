@@ -36,17 +36,11 @@ const student1 = new Students(
 const student2 = new Students(
 	"Walt",
 	19,
-	{
-		name: "Math",
-		level: "2CP",
-		grade: 13,
-	},
-	{
-		name: "English",
-		level: "2CP",
-		grade: 13,
-	}
+	new Course("Math", "2CP", 13),
+	new Course("English", "2CP", 13),
+	new Course("French", "2CP", 20, 3)
 );
+
 // a fucntion that calculates the gpa (no coef for now)
 function gpac(student) {
 	//calculates a total using reduce
@@ -55,9 +49,15 @@ function gpac(student) {
 	return total / NfCourses;
 }
 //with coef gpa
-function gpa(student) {}
+function gpa(student) {
+	let total = student.courses.reduce((acc, subject) => acc + subject.grade, 0);
+	let NfCourses = student.courses.length;
+	return total / NfCourses;
+}
 
 console.log(student1);
 console.log(student2);
 console.log(Students.sscount, "Number Of Students for now");
 console.log(gpac(student1));
+// testing the coef one
+console.log(gpa(student2));
