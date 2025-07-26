@@ -84,4 +84,18 @@ console.log(gpac(student1), "gpa with no coef");
 console.log(student2.gpa, "gpa getter");
 console.log(abunchofcourses, "TEST1,Filter");
 console.log(only13, "TEST2, Filter");
-console.log(Students.allstudentsarray,"all students");
+console.log(Students.allstudentsarray, "all students");
+//stage 3 new presentable map array of courses function
+function mapthestring(studenarrayofcourses) {
+	return studenarrayofcourses.map(function (element) {
+		return (
+			"the course is " +
+			element.name +
+			" for this level " +
+			element.level +
+			" for this grade " +
+			element.grade
+		);
+	});
+}
+console.log(mapthestring(student1.courses));
