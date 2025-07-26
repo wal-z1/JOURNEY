@@ -9,14 +9,14 @@ class Course {
 }
 
 class Students {
-	static sscount = 0;
+	//Removed => just length of the array static sscount = 0;//
 	// good idea to bea to access all students;
 	static allstudentsarray = [];
 	constructor(name, year, ...courses) {
 		this.name = name;
 		this.year = year;
 		this.courses = courses;
-		Students.sscount++; // use class name to access static
+		// REMOVED Students.sscount++; // use class name to access static
 		Students.allstudentsarray.push(this); //adds the student to the all studnets array;
 	}
 	//with coef gpa
@@ -75,13 +75,13 @@ let abunchofcourses = [
 let only13 = abunchofcourses.filter((course) => course.grade === 13);
 
 //
-console.log(student1);
-console.log(student2);
+console.log(student1, "Showing student 1");
+console.log(student2, "Showing student 2");
 //we'll test an each one function to show all students by the end
 console.log(Students.sscount, "Number Of Students for now");
-console.log(gpac(student1));
+console.log(gpac(student1), "gpa with no coef");
 // testing the coef one
-console.log(student2.gpa);
-console.log(abunchofcourses);
-console.log(only13);
+console.log(student2.gpa, "gpa getter");
+console.log(abunchofcourses), "TEST1, 	Filter";
+console.log(only13, "TEST2, Filter");
 console.log(Students.allstudentsarray);
