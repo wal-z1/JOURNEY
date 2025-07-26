@@ -70,3 +70,13 @@ console.log(student2.gpa);
 function addstudent(name, age, ...courses) {
 	return new Students(name, age, ...courses);
 }
+
+//function to filter courses with a grade above 18
+let abunchofcourses = [
+	new Course("French", "2CP", 20, 3),
+	new Course("English", "2CP", 13),
+	new Course("Math", "2CP", 13),
+];
+let only13 = abunchofcourses.filter((course) => course.grade === 13);
+console.log(abunchofcourses);
+console.log(only13);
