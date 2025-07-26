@@ -1,13 +1,28 @@
-# Web Development Practice
+# JS Learning Journey
 
-This repository contains a collection of small projects and experiments created while learning HTML, CSS, and JavaScript.
+A personal repository of casual practice projects while learning JavaScript, HTML, and CSS.
+
+This is not a portfolio. Just raw code, tests, and ideas as I learn and experiment.
 
 ## Structure
 
-- `html-css-demos/` — static layouts and simple design testing
-- `js-projects/` — JavaScript-based mini projects and logic practice
+### /frontend-experiments
+Basic static UI mockups built with HTML and CSS.
 
-## Note
+- `resume-clone`: Simple personal resume layout
+- `login-ui`: Login screen UI demo
 
-This is not a polished product. Just a place to test ideas and keep track of progress .
+### /js-projects
+Small JavaScript-based projects to practice logic, DOM, and interactivity.
+
+- `dice-game`
+- `number-guess-game`
+- `random-number-gen`
+- `password-generator`
+- `temp-converter`
+- `student-db`: Object + array data tests
+
+## Notes
+
+Some folders may be incomplete or messy ... this repo is part of my ongoing learning process.
 
