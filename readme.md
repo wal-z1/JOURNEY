@@ -1,11 +1,20 @@
-# HTML, JS & CSS Learning Repository
+# JS Learning Journey
 
-This is a repository for learning and practicing web development fundamentals:
+A personal repository of casual practice projects while learning JavaScript, HTML, and CSS.
 
-- HTML 
-- JavaScript
-- CSS 
+This is not a portfolio. Just raw code, tests, and ideas as I learn and experiment.
 
-## Purpose
+## Structure
 
-This repo contains my practice files, small projects, and experiments as I learn web development.
+### /frontend-experiments
+Basic static UI mockups built with HTML and CSS.
+
+
+### /js-projects
+Small JavaScript-based projects to practice logic, DOM, and interactivity.
+
+
+## Notes
+
+Some folders may be incomplete or messy ... this repo is part of my ongoing learning process.
+
