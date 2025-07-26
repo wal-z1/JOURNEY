@@ -1,12 +1,14 @@
 //defining classes
 class Students {
 	static sscount = 0;
-
+	// good idea to bea to access all students;
+	static allstudentsarray = [];
 	constructor(name, year, ...courses) {
 		this.name = name;
 		this.year = year;
 		this.courses = courses;
 		Students.sscount++; // use class name to access static
+		Students.allstudentsarray.push(this); //adds the student to the all studnets array;
 	}
 	//with coef gpa
 	get gpa() {
@@ -80,3 +82,4 @@ let abunchofcourses = [
 let only13 = abunchofcourses.filter((course) => course.grade === 13);
 console.log(abunchofcourses);
 console.log(only13);
+console.log(Students.allstudentsarray);
