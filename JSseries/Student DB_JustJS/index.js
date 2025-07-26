@@ -84,4 +84,4 @@ console.log(gpac(student1), "gpa with no coef");
 console.log(student2.gpa, "gpa getter");
 console.log(abunchofcourses, "TEST1,Filter");
 console.log(only13, "TEST2, Filter");
-console.log(Students.allstudentsarray);
+console.log(Students.allstudentsarray,"all students");
