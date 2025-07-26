@@ -1,11 +1,13 @@
-# HTML, JS & CSS Learning Repository
+# Web Development Practice
 
-This is a repository for learning and practicing web development fundamentals:
+This repository contains a collection of small projects and experiments created while learning HTML, CSS, and JavaScript.
 
-- HTML 
-- JavaScript
-- CSS 
+## Structure
 
-## Purpose
+- `html-css-demos/` — static layouts and simple design testing
+- `js-projects/` — JavaScript-based mini projects and logic practice
 
-This repo contains my practice files, small projects, and experiments as I learn web development.
+## Note
+
+This is not a polished product. Just a place to test ideas and keep track of progress .
+
