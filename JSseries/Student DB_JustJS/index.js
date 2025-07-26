@@ -6,6 +6,19 @@ class Course {
 		this.grade = grade;
 		this.coef = coef;
 	}
+	get grade() {
+		return this._grade;
+	}
+
+	set grade(grade) {
+		if (typeof grade === "number" && grade >= 0) {
+			this._grade = grade;
+		} else {
+			console.error("Value must be a postive");
+			console.error("Set to zero by default");
+			this._grade = 0;
+		}
+	}
 }
 
 class Students {
@@ -29,7 +42,13 @@ class Students {
 		return total / NCoef;
 	}
 }
-
+class GraduateStudents extends Students {
+	// children
+	constructor(name, year, topicofthesis, ...courses) {
+		super(name, year, ...courses); // uses the super to no repeat the constructor
+		this.topicofthesis = topicofthesis; //adds to the parent class
+	}
+}
 const student1 = new Students(
 	"Alex",
 	19,
@@ -87,15 +106,27 @@ console.log(only13, "TEST2, Filter");
 console.log(Students.allstudentsarray, "all students");
 //stage 3 new presentable map array of courses function
 function mapthestring(studenarrayofcourses) {
-	return studenarrayofcourses.map(function (element) {
-		return (
+	return studenarrayofcourses.map(
+		(element) =>
 			"the course is " +
 			element.name +
 			" for this level " +
 			element.level +
 			" for this grade " +
 			element.grade
-		);
-	});
+	);
 }
+
+//application on a single array
 console.log(mapthestring(student1.courses));
+// using foreach
+Students.allstudentsarray.forEach(function (element) {
+	console.log(mapthestring(element.courses));
+});
+//testing the grade error of setter
+
+let abunchofcourses2 = [
+	new Course("French", "2CP", 20, 3),
+	new Course("English", "2CP", 13),
+	new Course("Math", "2CP", -13), // error one
+];
