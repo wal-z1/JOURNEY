@@ -9,18 +9,10 @@ This is not a portfolio. Just raw code, tests, and ideas as I learn and experime
 ### /frontend-experiments
 Basic static UI mockups built with HTML and CSS.
 
-- `resume-clone`: Simple personal resume layout
-- `login-ui`: Login screen UI demo
 
 ### /js-projects
 Small JavaScript-based projects to practice logic, DOM, and interactivity.
 
-- `dice-game`
-- `number-guess-game`
-- `random-number-gen`
-- `password-generator`
-- `temp-converter`
-- `student-db`: Object + array data tests
 
 ## Notes
 
