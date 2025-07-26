@@ -1,4 +1,13 @@
 //defining classes
+class Course {
+	constructor(name, level, grade, coef = 1) {
+		this.name = name;
+		this.level = level;
+		this.grade = grade;
+		this.coef = coef;
+	}
+}
+
 class Students {
 	static sscount = 0;
 	// good idea to bea to access all students;
@@ -18,14 +27,6 @@ class Students {
 		);
 		let NCoef = this.courses.reduce((acc, subject) => acc + subject.coef, 0);
 		return total / NCoef;
-	}
-}
-class Course {
-	constructor(name, level, grade, coef = 1) {
-		this.name = name;
-		this.level = level;
-		this.grade = grade;
-		this.coef = coef;
 	}
 }
 
@@ -60,26 +61,27 @@ function gpac(student) {
 	return total / NfCourses;
 }
 
-function percoursegpa(course) {}
-console.log(student1);
-console.log(student2);
-console.log(Students.sscount, "Number Of Students for now");
-console.log(gpac(student1));
-// testing the coef one
-console.log(student2.gpa);
-
 //function to add student as variable
 function addstudent(name, age, ...courses) {
 	return new Students(name, age, ...courses);
 }
 
-//function to filter courses with a grade above 18
+//function to filter courses with a grade above 13
 let abunchofcourses = [
 	new Course("French", "2CP", 20, 3),
 	new Course("English", "2CP", 13),
 	new Course("Math", "2CP", 13),
 ];
 let only13 = abunchofcourses.filter((course) => course.grade === 13);
+
+//
+console.log(student1);
+console.log(student2);
+//we'll test an each one function to show all students by the end
+console.log(Students.sscount, "Number Of Students for now");
+console.log(gpac(student1));
+// testing the coef one
+console.log(student2.gpa);
 console.log(abunchofcourses);
 console.log(only13);
 console.log(Students.allstudentsarray);
