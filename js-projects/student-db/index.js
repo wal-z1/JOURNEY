@@ -93,18 +93,14 @@ let abunchofcourses = [
 ];
 let only13 = abunchofcourses.filter((course) => course.grade === 13);
 
-//
 console.log(student1, "Showing student 1");
 console.log(student2, "Showing student 2");
-//we'll test an each one function to show all students by the end
 console.log(Students.sscount, "Number Of Students for now");
 console.log(gpac(student1), "gpa with no coef");
-// testing the coef one
 console.log(student2.gpa, "gpa getter");
 console.log(abunchofcourses, "TEST1,Filter");
 console.log(only13, "TEST2, Filter");
 console.log(Students.allstudentsarray, "all students");
-//stage 3 new presentable map array of courses function
 function mapthestring(studenarrayofcourses) {
 	return studenarrayofcourses.map(
 		(element) =>
@@ -117,13 +113,10 @@ function mapthestring(studenarrayofcourses) {
 	);
 }
 
-//application on a single array
 console.log(mapthestring(student1.courses));
-// using foreach
 Students.allstudentsarray.forEach(function (element) {
 	console.log(mapthestring(element.courses));
 });
-//testing the grade error of setter
 
 let abunchofcourses2 = [
 	new Course("French", "2CP", 20, 3),

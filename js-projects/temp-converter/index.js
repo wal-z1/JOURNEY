@@ -1,4 +1,4 @@
-/*defintions*/
+
 const button = document.getElementById("but");
 const FTOCv = document.getElementById("FTOC");
 const res = document.getElementById("res");
@@ -10,7 +10,7 @@ function CTOF(x) {
 	return (x * 9) / 5 + 32;
 }
 function decide() {
-	const value = Number(document.getElementById("in").value); /*later*/
+	const value = Number(document.getElementById("in").value); 
 	if (FTOCv.checked) {
 		res.textContent = FTOC(value);
 	} else {

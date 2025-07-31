@@ -8,7 +8,7 @@ body {
 	height: 100vh;
 	margin: 0;
 	font-family: Helvetica, sans-serif;
-	/*to make a centered eflame element*/
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -17,23 +17,22 @@ body {
 	margin: 0%;
 	padding: 0%;
 }
-/*remove the defaults*/
+
 
 #container {
 	flex-flow: column wrap;
 	height: auto; /*take the possible Y length*/
 	width: 300px;
 	display: flex;
-	/*style that DIV*/
 	border-radius: 10px;
 	border: 2px solid rgb(36, 20, 78);
 	padding: 30px;
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.384);
 	backdrop-filter: blur(30px) brightness(110%);
 	/*aligning elemnts*/
-	/*on work*/
+
 	justify-content: space-evenly;
-	/*what's left is dealt with in the elment its self*/
+
 	transition: all 0.3s ease-in-out;
 	word-wrap: break-word;
 }
