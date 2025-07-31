@@ -7,11 +7,11 @@ This is not a portfolio. Just raw code, tests, and ideas as I learn and experime
 ## Structure
 
 ### /frontend-experiments
-Basic static UI mockups built with HTML and CSS.
+Basic static UI things
 
 
 ### /js-projects
-Small JavaScript-based projects to practice logic, DOM, and interactivity.
+Small JavaScript-based projects to practice.
 
 
 ## Notes
